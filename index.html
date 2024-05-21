@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <script src="./src/script/main.js" defer></script>
+    <title>CSS - De A à Z</title>
+</head>
+<body>
+    <header>
+        <h1>CSS - De A à Z</h1>
+        <nav class="alphabet-nav">
+            <a href="#A">A</a>
+            <a href="#B">B</a>
+            <a href="#C">C</a>
+            <a href="#D">D</a>
+            <a href="#E">E</a>
+            <a href="#F">F</a>
+            <a href="#G">G</a>
+            <a href="#H">H</a>
+            <a href="#I">I</a>
+            <a href="#J">J</a>
+            <a href="#K">K</a>
+            <a href="#L">L</a>
+            <a href="#M">M</a>
+            <a href="#N">N</a>
+            <a href="#O">O</a>
+            <a href="#P">P</a>
+            <a href="#Q">Q</a>
+            <a href="#R">R</a>
+            <a href="#S">S</a>
+            <a href="#T">T</a>
+            <a href="#U">U</a>
+            <a href="#V">V</a>
+            <a href="#W">W</a>
+            <a href="#X">X</a>
+            <a href="#Y">Y</a>
+            <a href="#Z">Z</a>
+        </nav>
+    </header>
+    <main>
+        <section id="A" class="section">
+            <h2>A</h2>
+            <div class="example-container hidden">
+                <h3>Align-items</h3>
+                <p>La propriété CSS <code>align-items</code> définit l'alignement des éléments enfants le long de l'axe transversal à l'intérieur d'un conteneur flex.</p>
+                
+                <h4>align-items: flex-start</h4>
+                <div class="container flex-start">
+                    <div>Élément 1</div>
+                    <div>Élément 2</div>
+                    <div>Élément 3</div>
+                </div>
+                <pre><code>
+                .container {
+                    display: flex;
+                    align-items: flex-start;
+                }
+                </code></pre>
+                
+                <h4>align-items: center</h4>
+                <div class="container center">
+                    <div>Élément 1</div>
+                    <div>Élément 2</div>
+                    <div>Élément 3</div>
+                </div>
+                <pre><code>
+                .container {
+                    display: flex;
+                    align-items: center;
+                }
+                </code></pre>
+                
+                <h4>align-items: flex-end</h4>
+                <div class="container flex-end">
+                    <div>Élément 1</div>
+                    <div>Élément 2</div>
+                    <div>Élément 3</div>
+                </div>
+                <pre><code>
+                .container {
+                    display: flex;
+                    align-items: flex-end;
+                }
+                </code></pre>
+    
+                <h3 class="secondh3">Animation</h3>
+                <p>Exemple d'animation où une boîte se déplace horizontalement.</p>
+                <div class="animated-box"></div>
+                <pre><code>
+                .animated-box {
+                    width: 50px;
+                    height: 50px;
+                    background-color: red;
+                    animation: example-animation 2s infinite;
+                }
+
+                @keyframes example-animation {
+                    0% { transform: translateX(0); }
+                    50% { transform: translateX(100px); }
+                    100% { transform: translateX(0); }
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="B" class="section">
+            <h2>B</h2>
+            <div class="example-container hidden">
+                <h3>Background-size</h3>
+                <p>La propriété CSS <code>background-size</code> permet de spécifier la taille de l'image de fond dans un élément.</p>
+                <div class="background-example"></div>
+                <pre><code>
+                .background-example {
+                    background-image: url('exemple.jpg');
+                    background-size: cover;
+                }
+                </code></pre>
+
+                <h3 class="secondh3">Border-radius</h3>
+                <p>La propriété CSS <code>border-radius</code> permet de spécifier des coins arrondis pour un élément. Vous pouvez utiliser une valeur spécifique en pixels ou en pourcentage pour déterminer le rayon de l'arrondi.</p>
+                <div class="border-example"></div>
+                <pre><code>
+                .border-example {
+                    border-radius: 50%;
+                }
+                </code></pre>
+
+                <h3 class="secondh3">Box-shadow</h3>
+                <p>La propriété CSS <code>box-shadow</code> permet d'ajouter une ombre à un élément. Vous pouvez spécifier l'ombre horizontale, verticale, le flou, la propagation et la couleur de l'ombre.</p>
+                <div class="box-shadow-example"></div>
+                <pre><code>
+                .box-shadow-example {
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="C" class="section">
+            <h2>C</h2>
+            <div class="example-container hidden">
+                <h3>Columns</h3>
+                <p>La propriété CSS <code>columns</code> permet de spécifier la disposition en colonnes des éléments à l'intérieur d'un conteneur.</p>
+                <div class="columns-example">
+                    <p>Contenu de la colonne 1</p>
+                    <p>Contenu de la colonne 2</p>
+                    <p>Contenu de la colonne 3</p>
+                </div>
+                <pre><code>
+                .columns-example {
+                    columns: 3;
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="D" class="section">
+            <h2>D</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="E" class="section">
+            <h2>E</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="F" class="section">
+            <h2>F</h2>
+            <div class="example-container hidden">
+                <h3>Filter</h3>
+                <p>La propriété CSS <code>filter</code> permet d'appliquer des effets visuels (comme le flou, la saturation des couleurs, etc.) aux éléments HTML.</p>
+
+                <h4>Flou</h4>
+                <div class="example-image blur"></div>
+                <pre><code>
+                .example-image.blur {
+                    filter: blur(5px);
+                }
+                </code></pre>
+
+                <h4>Saturate</h4>
+                <div class="example-image saturate"></div>
+                <pre><code>
+                .example-image.saturate {
+                    filter: saturate(200%);
+                }
+                </code></pre>
+
+                <h4>Invert</h4>
+                <div class="example-image invert"></div>
+                <pre><code>
+                .example-image.invert {
+                    filter: invert(100%);
+                }
+                </code></pre>
+
+                <h3 class="secondh3">Flex</h3>
+                <p>La propriété CSS <code>flex</code> est utilisée pour spécifier comment les éléments flexibles se comportent à l'intérieur d'un conteneur flex.</p>
+                <div class="flex-container">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+                <pre><code>
+                .flex-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+                </code></pre>
+
+                <h3 class="secondh3">Flex-direction</h3>
+                <p>La propriété CSS <code>flex-direction</code> avec la valeur aligne les éléments flexibles horizontalement ou verticalement.</p>
+
+                <h4>Row</h4>
+                <div class="flex-container-row">
+                    <div class="flex-item-row">1</div>
+                    <div class="flex-item-row">2</div>
+                    <div class="flex-item-row">3</div>
+                </div>
+                <pre><code>
+                .flex-container-row {
+                    display: flex;
+                    flex-direction: row;
+                }
+                </code></pre>
+
+                <h4>Column</h4>
+                <div class="flex-container-column">
+                    <div class="flex-item-column">1</div>
+                    <div class="flex-item-column">2</div>
+                    <div class="flex-item-column">3</div>
+                </div>
+                <pre><code>
+                    .flex-container-column {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="G" class="section">
+            <h2>G</h2>
+            <div class="example-container hidden">
+                <h3>Grid</h3>
+                <p>La propriété CSS <code>display: grid</code> permet de créer facilement des mises en page à l'aide d'une grille.</p>
+                <div class="grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+                <pre><code>
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 50px);
+                    grid-gap: 10px;
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="H" class="section">
+            <h2>H</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="I" class="section">
+            <h2>I</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="J" class="section">
+            <h2>J</h2>
+            <div class="example-container hidden">
+                <h3>Justify-content</h3>
+                <p>La propriété CSS <code>justify-content</code> aligne les éléments flexibles le long de l'axe principal d'un conteneur flex.</p>
+                <div class="flex-container justify-start">
+                    <div class="flex-item-just">1</div>
+                    <div class="flex-item-just">2</div>
+                    <div class="flex-item-just">3</div>
+                </div>
+                <pre><code>
+                .flex-container {
+                    display: flex;
+                    justify-content: center;
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="K" class="section">
+            <h2>K</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="L" class="section">
+            <h2>L</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="M" class="section">
+            <h2>M</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="N" class="section">
+            <h2>N</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="O" class="section">
+            <h2>O</h2>
+            <div class="example-container hidden">
+                <h3>Opacity</h3>
+                <p>La propriété CSS <code>opacity</code> définit le degré de transparence d'un élément.</p>
+                <div class="box"></div>
+                <pre><code>
+                .box {
+                    background-color: lightblue;
+                    opacity: 0.5;
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="P" class="section">
+            <h2>P</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="Q" class="section">
+            <h2>Q</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="R" class="section">
+            <h2>R</h2>
+            <div class="example-container hidden">
+                <h3>Resize</h3>
+                <p>La propriété CSS <code>resize</code> spécifie si un élément peut être redimensionné par l'utilisateur.</p>
+                <div class="example" contenteditable="true">Cliquez ici pour redimensionner cet élément.</div>
+                <pre><code>
+                .example {
+                    resize: both;
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="S" class="section">
+            <h2>S</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="T" class="section">
+            <h2>T</h2>
+            <div class="example-container hidden">
+                <h3>Text-decoration</h3>
+                <p>La propriété CSS <code>text-decoration</code> permet de définir la décoration du texte, telle que le soulignement, la ligne au-dessus ou la ligne à travers.</p>
+                <div class="text-decoration">Ceci est un exemple de texte avec une décoration de soulignement.</div>
+                <pre><code>
+                .example {
+                    text-decoration: underline;
+                }
+                </code></pre>
+
+                <h3 class="secondh3">Transform</h3>
+                <p>La propriété CSS <code>transform</code> permet d'appliquer des transformations à un élément, comme la rotation, l'échelle, l'inclinaison et la translation.</p>
+                <div class="shapes">
+                    <div class="shape triangle"></div>
+                    <div class="shape losange"></div>
+                    <div class="shape ovale"></div>
+                    <div class="shape rectangle"></div>
+                    <div class="shape trapeze"></div>
+                    <div class="shape octagon"></div>
+                </div>
+                <pre><code>
+                .triangle {
+                    transform: rotate(180deg);
+                }
+
+                .losange {
+                    transform: rotate(45deg);
+                }
+
+                .ovale {
+                    transform: scaleY(2);
+                }
+
+                .rectangle {
+                    transform: skewX(30deg);
+                }
+
+                .trapeze {
+                    transform: perspective(500px) rotateX(30deg);
+                }
+
+                .octagon {
+                    transform: rotate(90deg);
+                }
+                    </code></pre>
+
+                <h3 class="secondh3">Transition</h3>
+                <p>La propriété CSS <code>transition</code> permet de spécifier une transition entre les états d'un élément lorsqu'un changement de style est détecté.</p>
+                <button class="custom-button">Survole moi</button>
+                <pre><code>
+                .custom-button {
+                    transition: background-color 0.3s ease;
+                }
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="U" class="section">
+            <h2>U</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="V" class="section">
+            <h2>V</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="W" class="section">
+            <h2>W</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="X" class="section">
+            <h2>X</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="Y" class="section">
+            <h2>Y</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+
+        <section id="Z" class="section">
+            <h2>Z</h2>
+            <div class="example-container hidden">
+                <p>Rien pour cette lettre</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Alicia Ross</li>
+            <li>PMI</li>
+            <li>Mai 2024</li>
+        </ul>
+        <button id="backToTop" class="hide">
+            <i class="fas fa-arrow-up mr-2"></i> 
+        </button>
+    </footer>
+</body>
+</html>
